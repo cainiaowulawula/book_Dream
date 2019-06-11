@@ -3,10 +3,28 @@
     <div style="height:180px;background-color:white">
       <div style="height:15px"></div>
       <van-swipe :autoplay="3000" indicator-color="white">
-        <van-swipe-item>1</van-swipe-item>
-        <van-swipe-item>2</van-swipe-item>
-        <van-swipe-item>3</van-swipe-item>
-        <van-swipe-item>4</van-swipe-item>
+        <van-swipe-item>
+          <img
+          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+          src="../../assets/images/b1.jpg"
+        >
+        </van-swipe-item>
+        <van-swipe-item><img
+          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+          src="../../assets/images/b2.jpg"
+        ></van-swipe-item>
+        <van-swipe-item>
+          <img
+          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+          src="../../assets/images/b1.jpg"
+        >
+        </van-swipe-item>
+        <van-swipe-item>
+          <img
+          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+          src="../../assets/images/b2.jpg"
+        >
+        </van-swipe-item>
       </van-swipe>
     </div>
     <van-row style="margin-top:5px">
@@ -217,13 +235,10 @@ export default {
 </script>
 <style>
 .van-swipe {
-  background-color: #66c6f2;
+  background-color:white;
   height: 150px;
   text-align: center;
   color: white;
-}
-.van-swipe-item {
-  margin-top: 65px;
 }
 body {
   background-color: #f2f3f5;
