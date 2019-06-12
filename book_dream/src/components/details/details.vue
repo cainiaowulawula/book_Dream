@@ -5,25 +5,27 @@
       <van-swipe :autoplay="3000" indicator-color="white">
         <van-swipe-item>
           <img
-          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
-          src="../../assets/images/b1.jpg"
-        >
-        </van-swipe-item>
-        <van-swipe-item><img
-          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
-          src="../../assets/images/b2.jpg"
-        ></van-swipe-item>
-        <van-swipe-item>
-          <img
-          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
-          src="../../assets/images/b1.jpg"
-        >
+            style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+            src="../../assets/images/b1.jpg"
+          >
         </van-swipe-item>
         <van-swipe-item>
           <img
-          style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
-          src="../../assets/images/b2.jpg"
-        >
+            style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+            src="../../assets/images/b2.jpg"
+          >
+        </van-swipe-item>
+        <van-swipe-item>
+          <img
+            style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+            src="../../assets/images/b1.jpg"
+          >
+        </van-swipe-item>
+        <van-swipe-item>
+          <img
+            style="margin-left:0px;margin-right:0px;width:360px;overflow:hidden;height:150px;"
+            src="../../assets/images/b2.jpg"
+          >
         </van-swipe-item>
       </van-swipe>
     </div>
@@ -41,14 +43,18 @@
           <van-col span="24" style="height:90px;border-bottom: 1px solid #f1f1f1;">
             <van-row>
               <van-col span="15">
-                <p style="margin-left:15%;text-align:left;margin-top:20px;color:rgb(247, 115, 115)">热门书单</p>
-                <p style="margin-left:15%;text-align:left;margin-top:5px;color:grey;font-size:12px">每天更新，精彩不断</p>
+                <p
+                  style="margin-left:15%;text-align:left;margin-top:20px;color:rgb(247, 115, 115)"
+                >热门书单</p>
+                <p
+                  style="margin-left:15%;text-align:left;margin-top:5px;color:grey;font-size:12px"
+                >每天更新，精彩不断</p>
               </van-col>
               <van-col span="9">
                 <img
-          style="overflow:hidden;height:70px;border-radius: 5px;width:auto;margin-top:10px;"
-          src="../../assets/images/a4.jpg"
-        >
+                  style="overflow:hidden;height:70px;border-radius: 5px;width:auto;margin-top:10px;"
+                  src="../../assets/images/a4.jpg"
+                >
               </van-col>
             </van-row>
           </van-col>
@@ -57,14 +63,18 @@
           <van-col span="24" style="height:90px">
             <van-row>
               <van-col span="15">
-                <p style="margin-left:15%;text-align:left;margin-top:20px;color:rgb(184, 221, 100)">书友推荐</p>
-                <p style="margin-left:15%;text-align:left;margin-top:5px;color:grey;font-size:12px">读书会有，交流彼此</p>
+                <p
+                  style="margin-left:15%;text-align:left;margin-top:20px;color:rgb(184, 221, 100)"
+                >书友推荐</p>
+                <p
+                  style="margin-left:15%;text-align:left;margin-top:5px;color:grey;font-size:12px"
+                >读书会有，交流彼此</p>
               </van-col>
               <van-col span="9">
                 <img
-          style="overflow:hidden;height:70px;border-radius: 5px;width:auto;margin-top:10px;"
-          src="../../assets/images/a1.jpg"
-        >
+                  style="overflow:hidden;height:70px;border-radius: 5px;width:auto;margin-top:10px;"
+                  src="../../assets/images/a1.jpg"
+                >
               </van-col>
             </van-row>
           </van-col>
@@ -235,7 +245,7 @@ export default {
 </script>
 <style>
 .van-swipe {
-  background-color:white;
+  background-color: white;
   height: 150px;
   text-align: center;
   color: white;

@@ -1,5 +1,4 @@
 <template>
-  <div class="inbody">
     <div >
     <van-search fixed=true  placeholder="请输入搜索关键词" type="flex" shape="round" v-model="searchValue"/>
     <van-tabs v-model="activeOne">
@@ -15,17 +14,6 @@
       </van-tab>
     </van-tabs>
     </div>
-    <van-tabbar  v-model="active" active-color="#fb404f">
-      
-        <van-tabbar-item icon="shop-o">
-          <router-link tag="span" to="../../index">书店</router-link>
-          </van-tabbar-item>
-      
-      <van-tabbar-item icon="home-o" dot>书架</van-tabbar-item>
-      <van-tabbar-item icon="shopping-cart-o" info="5">购物车</van-tabbar-item>
-      <van-tabbar-item icon="friends-o" info="20">我的</van-tabbar-item>
-    </van-tabbar>
-  </div>
 </template>
 <script>
 export default {
@@ -47,5 +35,7 @@ export default {
 };
 </script>
 <style scoped>
+
 </style>
+
 
