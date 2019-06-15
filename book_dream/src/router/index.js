@@ -5,6 +5,11 @@ import index from '@/components/index/index'
 import details from '@/components/details/details'
 import ranking from '@/components/ranking/ranking'
 import discover from '@/components/discover/discover'
+import show from '@/components/show/show'
+import mypage from '@/components/mypage/mypage'
+import bookcase from '@/components/bookcase/bookcase'
+import bookgoods from '@/components/bookgoods/bookgoods'
+import shoppingCart from '@/components/shoppingCart/shoppingCart'
 
 Vue.use(Router)
 
@@ -19,16 +24,47 @@ export default new Router({
       path: '/index',
       name: 'index',
       component: index,
-      redirect: 'index/details',
+      redirect: '/index/show',
       children: [
         {
-          path: 'details',
-          name: 'details',
-          components: {
-            details: details,
-            ranking: ranking,
-            discover: discover
-          }
+          path: 'show',
+          name: 'show',
+          component: show,
+          redirect: 'show/details',
+          children: [
+            {
+              path: 'details',
+              name: 'details',
+              components: {
+                details: details,
+                ranking: ranking,
+                discover: discover
+              }
+            }
+          ]
+        },
+        {
+          path: 'mypage',
+          name: 'mypage',
+          component: mypage
+        },
+        {
+          path: 'shoppingCart',
+          name: 'shoppingCart',
+          component: shoppingCart
+        },
+        {
+          path: 'bookcase',
+          name: 'bookcase',
+          component: bookcase,
+          redirect: 'bookcase/bookgoods',
+          children:[
+            {
+              path: 'bookgoods',
+              name: 'bookgoods',
+              component: bookgoods
+            }
+          ]
         }
       ]
     },
