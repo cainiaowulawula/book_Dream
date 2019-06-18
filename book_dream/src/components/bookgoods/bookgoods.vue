@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-bottom:60px;overflow:auto">
     <div style="height:280px">
       <van-row type="flex" justify="space-around" style="margin-top:10px">
         <van-col span="11">
@@ -12,7 +12,7 @@
             <p
               style=";margin-left:5px;text-align:left;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;font-size:12px;color:gray"
             >安徒生</p>
-            <van-tag color="#f2826a" style="margin-top:5px;margin-left:5px" plain>满50减10元</van-tag>
+            <div><van-tag color="#f2826a" style="margin-top:5px;margin-left:5px;text-align:left" plain>满50减10元</van-tag></div>
             <div style="margin-top:10px;margin-left:5px">
               <div style="float:left;position:relative;">
                 <div
@@ -48,7 +48,7 @@
         </van-col>
       </van-row>
     </div>
-    <div>
+    <div style="height:280px" >
       <van-row type="flex" justify="space-around" style="margin-top:10px">
         <van-col span="11">
          <div style="height:280px;background-color:white;border-radius:8px">
@@ -83,7 +83,7 @@
               style=";margin-left:5px;text-align:left;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;font-size:12px;color:gray"
             >安徒生</p>
             <van-tag color="#f2826a" style="margin-top:5px;margin-left:5px" plain>满50减10元</van-tag>
-            <div style="margin-top:10px;margin-left:5px">
+            <div style="margin-top:10px;margin-left:5px;margin-borrom:60px">
               <div style="float:left;position:relative;">
                 <div
                   style="text-align:left;color:red;float:left;font-size:10px;position:absolute; bottom:0; left:0;"
@@ -96,7 +96,6 @@
         </van-col>
       </van-row>
     </div>
-    <div style="margin-bottom:60px"></div>
   </div>
 </template>
 <script>

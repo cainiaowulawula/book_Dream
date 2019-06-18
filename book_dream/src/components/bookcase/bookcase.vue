@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-bottom:60px">
     <van-nav-bar
       title="书架"
       left-text
@@ -16,7 +16,8 @@
         <van-button block type="info" @click="onConfirm">确认</van-button>
       </van-dropdown-item>
     </van-dropdown-menu>
-    <router-view></router-view>
+     <router-view></router-view>
+    
   </div>
 </template>
 <script>
