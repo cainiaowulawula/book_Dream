@@ -10,6 +10,8 @@ import mypage from '@/components/mypage/mypage'
 import bookcase from '@/components/bookcase/bookcase'
 import bookgoods from '@/components/bookgoods/bookgoods'
 import shoppingCart from '@/components/shoppingCart/shoppingCart'
+import bookDetails from '@/components/bookDetails/bookDetails'
+import bookDetailsMore from '@/components/bookDetailsMore/bookDetailsMore'
 
 Vue.use(Router)
 
@@ -68,5 +70,18 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/bookDetails',
+      name: 'bookDetails',
+      component: bookDetails,
+      redirect: 'bookDetails/bookDetailsMore',
+          children:[
+            {
+              path: 'bookDetailsMore',
+              name: 'bookDetailsMore',
+              component: bookDetailsMore
+            }
+          ]
+    }
   ]
 })

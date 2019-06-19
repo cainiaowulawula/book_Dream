@@ -11,6 +11,7 @@
     <div style="height:46px"></div>
     <div v-for="list in datalist" :key="list.id">
       <div class="van-hairline--top"></div>
+      
       <div style="height:160px;background-color:white">
         <van-row>
           <van-col span="2">
@@ -72,6 +73,7 @@
           </van-col>
         </van-row>
       </div>
+     
     </div>
     <div style="margin-bottom:110px"></div>
 

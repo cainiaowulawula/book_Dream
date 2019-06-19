@@ -1,8 +1,12 @@
 <template>
   <div style="margin-bottom:60px;overflow:auto">
+    
     <div style="height:280px">
       <van-row type="flex" justify="space-around" style="margin-top:10px">
+       
         <van-col span="11">
+           <router-link tag="span"
+                    to='../../bookDetails'>
           <div style="height:280px;background-color:white;border-radius:8px">
             <img style src="../../assets/images/a4.jpg" alt>
             <p
@@ -23,7 +27,9 @@
               <div style="float:right;font-size:12px;color:gray;margin-top:3px;margin-right:5px">陕西·西安</div>
             </div>
           </div>
+          </router-link>
         </van-col>
+         
         <van-col span="11">
           <div style="height:280px;background-color:white;border-radius:8px">
             <img style src="../../assets/images/a3.jpg" alt>
